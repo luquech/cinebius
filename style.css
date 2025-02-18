@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #008080;
+  color: white;
+  padding: 30px 0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center; /* Espaço entre os links e os botões sociais */
+  align-items: center; /* Alinha verticalmente os itens */
+  gap: 30px; /* Espaço personalizado entre a navegação e os botões sociais */
+  padding: 0 20px; /* Ajuste de espaçamento interno */
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+section {
+  padding: 50px;
+  font-size: 18px;
+}
+
+/* Estilo para os botões sociais */
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Estilo para os ícones sociais */
+.social-icon {
+  font-size: 24px; /* Tamanho dos ícones */
+  color: #333; /* Cor dos ícones */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #0077b5; /* Cor ao passar o mouse */
+}
+
+/* Tamanho específico para ícones de redes sociais */
+.social-icon i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon i.fa-facebook-f {
+  background-color: #3b5998; /* Cor do Facebook */
+  color: white;
+}
+
+.social-icon i.fa-youtube {
+  background-color: #ff0000; /* Cor do YouTube */
+  color: white;
+}
+
+footer {
+  background-color: #008080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #0077b5; /* Cor do hover */
+}
+
+.social-icon i {
+  transition: color 0.3s ease;
+}
