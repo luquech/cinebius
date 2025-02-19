@@ -1,68 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produções - Cinebius Produções</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        /* Layout para os vídeos */
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta para 3 colunas quando possível */
+            gap: 20px; /* Espaço entre os vídeos */
+            padding: 20px;
+            justify-items: center; /* Centraliza os itens */
+        }
+
+        .video-item {
+            text-align: center; /* Centraliza o título e a descrição */
+            max-width: 400px; /* Define um tamanho máximo */
+        }
+
+        .video-item iframe {
+            width: 100%; /* Garante que o vídeo ocupe toda a largura disponível */
+            height: 215px; /* Altura fixa */
+            border-radius: 10px; /* Bordas arredondadas para um design melhor */
+        }
+
+        .video-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .video-description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .video-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta para 2 colunas em telas menores */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .video-container {
+                grid-template-columns: 1fr; /* Apenas 1 coluna para telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
     <header>
-      <h1>Cinebius Produções</h1>
-      <div class="header-nav">
-        <nav>
-          <a href="cinebius.html">Home</a>
-          <a href="quemsamos.html">Quem Somos</a>
-          <a href="contato.html">Contato</a>
-          <a href="parceiros.html">Parceiros</a>
-          <a href="producoes.html">Produções</a>
-        </nav>
-        <div class="social-buttons">
-          <a
-            href="https://www.facebook.com/vi.araujo.71"
-            target="_blank"
-            class="social-icon"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/@Cinebiusprodu%C3%A7%C3%B5es/featured"
-            target="_blank"
-            class="social-icon"
-            ><i class="fab fa-youtube"></i
-          ></a>
+        <h1>Cinebius Produções</h1>
+        <div class="header-nav">
+            <nav>
+                <a href="cinebius.html">Home</a>
+                <a href="quemsamos.html">Quem Somos</a>
+                <a href="contato.html">Contato</a>
+                <a href="parceiros.html">Parceiros</a>
+                <a href="producoes.html">Produções</a>
+            </nav>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/vi.araujo.71" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@Cinebiusprodu%C3%A7%C3%B5es/featured" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
         </div>
-      </div>
     </header>
+
     <section>
-      <h2>Nossas Produções</h2>
-      <p>Aqui você pode encontrar nossos filmes e projetos mais recentes.</p>
-      <!-- Você pode adicionar pôsteres, trailers e descrições dos filmes -->
+        <h2>Nossas Produções</h2>
+        <p>Aqui você pode encontrar nossos filmes e projetos mais recentes.</p>
+
+        <div class="video-container">
+            <div class="video-item">
+                <div class="video-title">TRAILER DO FILME ; BIU DOIDO - FACES DO TEMPO</div>
+                <iframe src="https://www.youtube.com/embed/zPEddWlEPaM" allowfullscreen></iframe>
+                <div class="video-description">Descrição breve sobre o vídeo 1.</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-title">Curta-Metragem, Lei Aldir Blanc - Sonho ou Realidade</div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8mRFcODxcs4?si=nt-cxHxoEQIuSJuD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-description">Descrição breve sobre o vídeo 2.</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-title">Biu Doido - Um louco em instantes de lucidez </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QbJCRvAh9Rs?si=y74-9pw3w2glZPHX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-description">Descrição breve sobre o vídeo 3.</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-title">Vi Araújo apresenta, "Uma aula de lucidez com Biu Doido em Custódia."</div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wGKR4WM17qY?si=2TX6PsZIcER3qESK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-description">Descrição breve sobre o vídeo 4.</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-title">MARIDO QUE SUSPEITA DA MULHER, QUE ELA ESTÁ COM CORONAVÍRUS</div>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/xoyqYg8L0_Q" title="MARIDO QUE SUSPEITA DA MULHER, QUE ELA  ESTÁ COM CORONAVÍRUS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-description">Descrição breve sobre o vídeo 5.</div>
+            </div>
+
+            <div class="video-item">
+                <div class="video-title">Entrevista Com Vi Araújo</div>
+                <iframe width="1280" height="704" src="https://www.youtube.com/embed/QxqSQKYvCiQ" title="Entrevista Com Vi Araújo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-description">Descrição breve sobre o vídeo 6.</div>
+            </div>
+        </div>
     </section>
 
     <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 Cinebius Produções. Todos os direitos reservados.</p>
-        <div class="footer-social-buttons">
-          <a
-            href="https://www.facebook.com/vi.araujo.71"
-            target="_blank"
-            class="social-icon"
-          >
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a
-            href="https://www.youtube.com/@Cinebiusprodu%C3%A7%C3%B5es/featured"
-            target="_blank"
-            class="social-icon"
-          >
-            <i class="fab fa-youtube"></i>
-          </a>
+        <div class="footer-content">
+            <p>&copy; 2025 Cinebius Produções. Todos os direitos reservados.</p>
+            <div class="footer-social-buttons">
+                <a href="https://www.facebook.com/vi.araujo.71" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@Cinebiusprodu%C3%A7%C3%B5es/featured" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
         </div>
-      </div>
     </footer>
-  </body>
+</body>
 </html>
