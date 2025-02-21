@@ -110,3 +110,14 @@ footer {
 .social-icon i {
   transition: color 0.3s ease;
 }
+.carousel img {
+  width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+  height: 600px; /* Define uma altura fixa para todas as imagens */
+  object-fit: cover; /* Corta a imagem para preencher o espaço sem distorcer */
+  border-radius: 10px;
+}
+.carousel-container {
+  width: 100%; /* Aumenta para ocupar toda a largura da tela */
+  max-width: 800px; /* Define um limite máximo opcional */
+  height: 600px; /* Aumenta a altura do carrossel */
+}
