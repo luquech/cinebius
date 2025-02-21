@@ -196,3 +196,17 @@ footer {
     height: 300px; /* Ajusta a altura para dispositivos muito pequenos */
   }
 }
+.quemsamos-img {
+  max-width: 500px;  /* Limita a largura da imagem a 500px */
+  width: 100%;       /* A largura da imagem pode se ajustar até 100% do contêiner */
+  height: auto;      /* Mantém a proporção da imagem */
+  display: block;
+  margin: 0 auto;    /* Centraliza a imagem */
+}
+.home-video {
+  width: 100%; /* Faz o iframe ocupar 100% da largura do contêiner */
+  height: auto; /* Ajusta a altura de acordo com a largura para manter a proporção */
+  max-width: 720px; /* Garante que o iframe não ultrapasse o limite do contêiner */
+  aspect-ratio: 16/9; /* Mantém a proporção 16:9, comum para vídeos */
+  border: none; /* Remove a borda do iframe */
+}
