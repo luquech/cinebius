@@ -210,3 +210,10 @@ footer {
   aspect-ratio: 16/9; /* Mantém a proporção 16:9, comum para vídeos */
   border: none; /* Remove a borda do iframe */
 }
+.texto-direita {
+  text-align: left;  /* Alinha o texto à direita */
+  max-width: 60%;     /* Define uma largura máxima para o parágrafo */
+  margin: 0 auto;     /* Centraliza o parágrafo dentro do container */
+  line-height: 1.5;    /* Ajusta o espaçamento entre as linhas */
+
+}
