@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Cinebius Produções</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <style>
       /* Estilização do carrossel */
       .carousel-container {
@@ -49,6 +47,7 @@
       .prev {
         left: 10px;
       }
+
       .next {
         right: 10px;
       }
@@ -59,6 +58,7 @@
       }
     </style>
   </head>
+
   <body>
     <header>
       <h1>Cinebius Produções</h1>
@@ -71,18 +71,10 @@
           <a href="producoes.html">Produções</a>
         </nav>
         <div class="social-buttons">
-          <a
-            href="https://www.facebook.com/vi.araujo.71"
-            target="_blank"
-            class="social-icon"
-          >
+          <a href="https://www.facebook.com/vi.araujo.71" target="_blank" class="social-icon">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a
-            href="https://www.youtube.com/@Cinebiusprodu%C3%A7%C3%B5es/featured"
-            target="_blank"
-            class="social-icon"
-          >
+          <a href="https://www.youtube.com/@Cinebiusprodu%C3%A7%C3%B5es/featured" target="_blank" class="social-icon">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
@@ -99,8 +91,8 @@
           <img src="img/filme2.jpg" alt="Imagem 1" />
           <img src="img/camera1.jpg" alt="Imagem 2" />
           <img src="img/camera2.jpg" alt="Imagem 3" />
-          <img src="img/cabaça.jpg"/>
-          <img src="img/cartaz.jpg"/>
+          <img src="img/cabaça.jpg" />
+          <img src="img/cartaz.jpg" />
           <img src="img/roteiro.jpg" />
           <img src="img/biudoido.jpg" />
         </div>
@@ -110,52 +102,37 @@
 
       <!-- Vídeo do YouTube -->
       <h3>Proximas Produções</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/zPEddWlEPaM?si=lo7E9RHLD7D-VSAN"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+      
+      <iframe class="home-video" width="560" height="315" src="https://www.youtube.com/embed/zPEddWlEPaM?si=lo7E9RHLD7D-VSAN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <script>
-      let index = 0
+      let index = 0;
 
       function moveSlide(step) {
-        const carousel = document.querySelector('.carousel')
-        const slides = document.querySelectorAll('.carousel img')
-        index = (index + step + slides.length) % slides.length
-        carousel.style.transform = `translateX(${-index * 100}%)`
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.carousel img');
+        index = (index + step + slides.length) % slides.length;
+        carousel.style.transform = `translateX(${-index * 100}%)`;
       }
 
       // Muda automaticamente a cada 3 segundos
-      setInterval(() => moveSlide(1), 10000)
+      setInterval(() => moveSlide(1), 10000);
     </script>
 
     <footer>
       <div class="footer-content">
         <p>&copy; 2025 Cinebius Produções. Todos os direitos reservados.</p>
         <div class="footer-social-buttons">
-          <a
-            href="https://www.facebook.com/vi.araujo.71"
-            target="_blank"
-            class="social-icon"
-          >
+          <a href="https://www.facebook.com/vi.araujo.71" target="_blank" class="social-icon">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a
-            href="https://www.youtube.com/@Cinebiusprodu%C3%A7%C3%B5es/featured"
-            target="_blank"
-            class="social-icon"
-          >
+          <a href="https://www.youtube.com/@Cinebiusprodu%C3%A7%C3%B5es/featured" target="_blank" class="social-icon">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
       </div>
     </footer>
   </body>
+
 </html>
